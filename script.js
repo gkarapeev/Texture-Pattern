@@ -119,12 +119,9 @@ function drawPoints() {
       // A value between 0 and 1
       const offsetAmountX = Number("0." + groupOfFourRandomNumbers[0]);
       const offsetAmountY = Number("0." + groupOfFourRandomNumbers[1]);
-      const offsetDirectionX = parseInt(
-        Math.round(Number("0." + groupOfFourRandomNumbers[2]))
-      );
-      const offsetDirectionY = parseInt(
-        Math.round(Number("0." + groupOfFourRandomNumbers[3]))
-      );
+
+      const offsetDirectionX = Math.round(Number("0." + groupOfFourRandomNumbers[2])) ? 1 : -1;
+      const offsetDirectionY = Math.round(Number("0." + groupOfFourRandomNumbers[3])) ? 1 : -1;
 
       const offsetX = offsetAmountX * amplitude * offsetDirectionX;
       const offsetY = offsetAmountY * amplitude * offsetDirectionY;
