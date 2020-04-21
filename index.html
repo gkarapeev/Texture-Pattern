@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pattern</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="params">
+      <!-- Line Count -->
+      <div class="param">
+        <label for="line-count" class="param-label">Line Count</label>
+        <input type="number" class="param-input" id="line-count" />
+      </div>
+
+      <!-- Amplitude -->
+      <div class="param">
+        <label for="amplitude" class="param-label">Amplitude</label>
+        <input type="number" class="param-input" id="amplitude" />
+      </div>
+
+      <!-- Grid Spacing -->
+      <div class="param">
+        <label for="grid-spacing" class="param-label">Grid Spacing</label>
+        <input type="number" class="param-input" id="grid-spacing" />
+      </div>
+
+      <!-- Shape Size -->
+      <div class="param">
+        <label for="shape-size" class="param-label">Shape Size</label>
+        <input type="number" class="param-input" id="shape-size" />
+      </div>
+
+      <!-- Seed -->
+      <div class="param">
+        <label for="seed-number" class="param-label">Seed</label>
+        <input type="number" class="param-input" id="seed-number" />
+      </div>
+
+      <!-- Show Grid -->
+      <div class="param-checkbox">
+        <label for="grid-toggle" class="param-label param-label-checkbox"
+          >Show Grid</label
+        >
+        <input type="checkbox" class="param-checkbox-input" id="grid-toggle" />
+      </div>
+
+      <!-- Shape -->
+      <div class="param-checkbox">
+        <label for="shape-square" class="param-label param-label-checkbox"
+          >Square</label
+        >
+        <input
+          type="radio"
+          class="param-checkbox-input"
+          id="shape-square"
+          name="shape"
+        />
+        <label for="shape-circle" class="param-label param-label-checkbox"
+          >Circle</label
+        >
+        <input
+          type="radio"
+          class="param-checkbox-input"
+          id="shape-circle"
+          name="shape"
+        />
+      </div>
+
+      <!-- Solid -->
+      <div class="param-checkbox">
+        <label for="solid" class="param-label param-label-checkbox"
+          >Solid</label
+        >
+        <input
+          type="radio"
+          class="param-checkbox-input"
+          id="solid"
+          name="solid"
+        />
+        <label for="stroke" class="param-label param-label-checkbox"
+          >Stroke</label
+        >
+        <input
+          type="radio"
+          class="param-checkbox-input"
+          id="stroke"
+          name="solid"
+        />
+      </div>
+    </div>
+    <canvas id="board"> </canvas>
+    <script src="pi.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
