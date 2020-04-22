@@ -1,0 +1,19 @@
+{
+  "name": "pattern",
+  "version": "1.0.0",
+  "description": "Parametric cell-like texture generator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkarapeev/pattern.git"
+  },
+  "author": "Asi & Gesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkarapeev/pattern/issues"
+  },
+  "homepage": "https://github.com/gkarapeev/pattern#readme"
+}
