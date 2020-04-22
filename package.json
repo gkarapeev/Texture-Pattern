@@ -4,7 +4,8 @@
   "description": "Parametric cell-like texture generator",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "log": "heroku logs -t"
   },
   "repository": {
     "type": "git",
