@@ -90,6 +90,12 @@ function drawPoints() {
 
   ctx.fillStyle = "#aaa";
 
+  var points = [];
+
+  for (let i = 0; i < lineCount; i ++) {
+    points[i] = [];
+  }
+
   for (let i = 1; i <= lineCount; i++) {
     let y = i * gridSpacing;
 
@@ -126,6 +132,8 @@ function drawPoints() {
       const offsetX = offsetAmountX * amplitude * offsetDirectionX;
       const offsetY = offsetAmountY * amplitude * offsetDirectionY;
 
+      points[j - 1].push({ x: x + offsetX, y: y + offsetY });
+
       ctx.beginPath();
       if (shape === "square") {
         ctx.rect(x + offsetX, y + offsetY, shapeSize, shapeSize);
@@ -148,6 +156,9 @@ function drawPoints() {
       }
     }
   }
+
+  console.log(points);
+
 }
 
 drawPoints();
